@@ -115,7 +115,7 @@ module.exports = {
 	},
 	AllowsCocs: {
 		extract: (item) => !!getBPRules(item)?.AllowsCocs,
-		permissions: ['ADMIN'],
+		permissions: ['ADMIN', 'MAINTAIN', 'WRITE'],
 	},
 	DismissesStaleReviews: {
 		extract: (item) => !!getBPRules(item)?.dismissesStaleReviews,
