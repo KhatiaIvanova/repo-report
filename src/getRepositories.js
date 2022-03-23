@@ -83,9 +83,9 @@ function generateQuery(endCursor, { f }) {
 
 module.exports = async function getRepositories(flags, filter) {
 	// Get all repositories
-	Console.log("Loading repositories...");
+	console.log("Loading repositories...");
 	const { points, repositories } = await getRepos(generateQuery, flags, filter);
-	Console.log("Loaded");
+	console.log("Loaded");
 	if (!flags.sort) {
 		repositories.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
 	}
