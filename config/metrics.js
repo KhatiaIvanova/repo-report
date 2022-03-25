@@ -134,7 +134,7 @@ module.exports = {
 		permissions: ['ADMIN'],
 	},
 	CodeOfConduct: {
-		extract: (item) => !!getBPRules(item)?.CodeOfConduct,
+		extract: item.CodeOfConduct.key ? true : false,
 		permissions: ['ADMIN','MAINTAIN','WRITE'],
 	},
 	isPrivate: {
