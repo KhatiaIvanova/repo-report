@@ -133,8 +133,8 @@ module.exports = {
 		extract: (item) => !!getBPRules(item)?.requiresConversationResolution,
 		permissions: ['ADMIN'],
 	},
-	CodeOfConduct: {
-		extract: (item )=> item.CodeOfConduct.key || '---',
+	codeOfConduct: {
+		extract: (item )=> item.codeOfConduct.key || '---',
 		permissions: ['ADMIN','MAINTAIN','WRITE'],
 	},
 	isPrivate: {
