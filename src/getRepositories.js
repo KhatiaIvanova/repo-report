@@ -53,10 +53,10 @@ function generateQuery(endCursor, { f }) {
 		isBlankIssuesEnabled
 		isFork
 		isPrivate
-		CodeOfConduct {
+		isSecurityPolicyEnabled
+		codeOfConduct {
 			key
 		}
-		isSecurityPolicyEnabled
 		isTemplate
 		licenseInfo {
 			name
