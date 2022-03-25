@@ -134,7 +134,7 @@ module.exports = {
 		permissions: ['ADMIN'],
 	},
 	codeOfConduct: {
-		extract: (item )=> item.codeOfConduct.name || '---',
+		extract: (item )=> item.codeOfConduct.url || '---',
 		permissions: ['ADMIN','MAINTAIN','WRITE'],
 	},
 	isPrivate: {
