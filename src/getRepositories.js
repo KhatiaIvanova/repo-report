@@ -32,9 +32,6 @@ function generateQuery(endCursor, { f }) {
 		nameWithOwner
 		defaultBranchRef {
 			name
-			CodeOfConduct {
-				key
-			}
 			branchProtectionRule {
 				allowsForcePushes
 				allowsDeletions
@@ -56,6 +53,9 @@ function generateQuery(endCursor, { f }) {
 		isBlankIssuesEnabled
 		isFork
 		isPrivate
+		CodeOfConduct {
+			key
+		}
 		isSecurityPolicyEnabled
 		isTemplate
 		licenseInfo {
