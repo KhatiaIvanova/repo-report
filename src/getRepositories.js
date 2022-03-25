@@ -49,7 +49,7 @@ function generateQuery(endCursor, { f }) {
 		hasWikiEnabled
 		forkingAllowed
 		CodeOfConduct {
-			key : null
+			key
 		}
 		isArchived
 		autoMergeAllowed
