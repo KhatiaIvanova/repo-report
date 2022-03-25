@@ -55,7 +55,7 @@ function generateQuery(endCursor, { f }) {
 		isPrivate
 		isSecurityPolicyEnabled
 		codeOfConduct{
-			name
+			url
 		}
 		isTemplate
 		licenseInfo {
