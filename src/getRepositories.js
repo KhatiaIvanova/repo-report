@@ -48,6 +48,9 @@ function generateQuery(endCursor, { f }) {
 		hasProjectsEnabled
 		hasWikiEnabled
 		forkingAllowed
+		CodeOfConduct {
+			key : null
+		}
 		isArchived
 		autoMergeAllowed
 		isBlankIssuesEnabled
@@ -83,9 +86,7 @@ function generateQuery(endCursor, { f }) {
 
 module.exports = async function getRepositories(flags, filter) {
 	// Get all repositories
-	console.log("Loading repositories...");
 	const { points, repositories } = await getRepos(generateQuery, flags, filter);
-	console.log("Loaded");
 	if (!flags.sort) {
 		repositories.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
 	}

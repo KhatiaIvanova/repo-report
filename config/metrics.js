@@ -113,7 +113,6 @@ module.exports = {
 		extract: (item) => !!getBPRules(item)?.allowsDeletions,
 		permissions: ['ADMIN'],
 	},
-	
 	DismissesStaleReviews: {
 		extract: (item) => !!getBPRules(item)?.dismissesStaleReviews,
 		permissions: ['ADMIN'],
@@ -133,6 +132,10 @@ module.exports = {
 	ReqConversationResolution: {
 		extract: (item) => !!getBPRules(item)?.requiresConversationResolution,
 		permissions: ['ADMIN'],
+	},
+	CodeOfConduct: {
+		extract: (item) => !!getBPRules(item)?.CodeOfConduct,
+		permissions: ['ADMIN','MAINTAIN','WRITE'],
 	},
 	isPrivate: {
 		dontPrint: true,
