@@ -132,11 +132,10 @@ module.exports = {
 	ReqConversationResolution: {
 		extract: (item) => !!getBPRules(item)?.requiresConversationResolution,
 		permissions: ['ADMIN'],
-	},
-	codeOfConduct: {
+	},fdsffdsfsdffdsfsd
 
-		extract: (item )=> item.codeOfConduct !=null,
-		permissions: ['ADMIN','MAINTAIN','WRITE'],
+		extract: (item )=> true,
+		permissions: ['ADMIN','MAINTAIN','WRITE'],fdsfdsfdsfds
 	},
 	isPrivate: {
 		dontPrint: true,
