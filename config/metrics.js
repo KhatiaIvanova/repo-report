@@ -135,7 +135,7 @@ module.exports = {
 	},
 	codeOfConduct: {
 
-		extract: (item )=> item.codeOfConduct !=null,
+		extract: (item )=>  item.codeOfConduct? item.codeOfConduct.name : '---',
 		permissions: ['ADMIN','MAINTAIN','WRITE'],
 	},
 	isPrivate: {

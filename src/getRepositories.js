@@ -55,7 +55,8 @@ function generateQuery(endCursor, { f }) {
 		isPrivate
 		isSecurityPolicyEnabled
 		codeOfConduct{
-			url
+			name
+			
 		}
 		isTemplate
 		licenseInfo {
@@ -90,6 +91,5 @@ module.exports = async function getRepositories(flags, filter) {
 	if (!flags.sort) {
 		repositories.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
 	}
-
 	return { points, repositories };
 };
