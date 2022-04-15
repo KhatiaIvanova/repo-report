@@ -54,7 +54,7 @@ function generateQuery(endCursor, { f }) {
 		isFork
 		isPrivate
 		isSecurityPolicyEnabled
-		codeOfConduct{
+		codeOfConduct {
 			name
 		}
 		isTemplate
