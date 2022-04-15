@@ -54,11 +54,29 @@
 						"viewerPermission": "ADMIN"
 					},
 					{
-						"name": "media-upload-app",
-						"nameWithOwner": "name/media-upload-app",
+						"name": "responsive-design",
+						"nameWithOwner": "name/responsive-design",
 						"isPrivate": false,
 						"defaultBranchRef": {
-							"name": "develop"
+							"name": "master"
+						},
+						"viewerPermission": "ADMIN"
+					},
+					{
+						"name": "ecma262",
+						"nameWithOwner": "name/ecma262",
+						"isPrivate": false,
+						"defaultBranchRef": {
+							"name": "main"
+						},
+						"viewerPermission": "ADMIN"
+					},
+					{
+						"name": "agendas",
+						"nameWithOwner": "name/agendas",
+						"isPrivate": false,
+						"defaultBranchRef": {
+							"name": "main"
 						},
 						"viewerPermission": "ADMIN"
 					}
