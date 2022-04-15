@@ -66,6 +66,9 @@
 						"name": "ecma262",
 						"nameWithOwner": "name/ecma262",
 						"isPrivate": false,
+						"codeOfConduct" : {
+							"name" : "CODE_OF_CONDUCT"
+						},
 						"defaultBranchRef": {
 							"name": "main"
 						},
@@ -75,6 +78,9 @@
 						"name": "agendas",
 						"nameWithOwner": "name/agendas",
 						"isPrivate": false,
+						"codeOfConduct" : {
+							"name": "---"
+						},
 						"defaultBranchRef": {
 							"name": "main"
 						},
