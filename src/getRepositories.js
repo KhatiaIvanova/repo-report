@@ -54,7 +54,7 @@ function generateQuery(endCursor, { f }) {
 		isFork
 		isPrivate
 		isSecurityPolicyEnabled
-		codeOfConduct{
+		codeOfConduct {
 			name
 		}
 		isTemplate
@@ -87,6 +87,7 @@ function generateQuery(endCursor, { f }) {
 module.exports = async function getRepositories(flags, filter) {
 	// Get all repositories
 	const { points, repositories } = await getRepos(generateQuery, flags, filter);
+
 	if (!flags.sort) {
 		repositories.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
 	}
