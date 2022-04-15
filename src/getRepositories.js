@@ -56,7 +56,6 @@ function generateQuery(endCursor, { f }) {
 		isSecurityPolicyEnabled
 		codeOfConduct{
 			name
-			
 		}
 		isTemplate
 		licenseInfo {
